@@ -1,10 +1,10 @@
 import Text from "./Text";
 
-function Container({ theme }) {
+function Container() {
   return (
     <div className="App">
       <h2>Container Component</h2>
-      <Text theme={theme} />
+      <Text />
     </div>
   );
 }
