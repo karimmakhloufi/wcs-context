@@ -6,7 +6,14 @@ function Text() {
   return (
     <div>
       <p>I'm the text</p>
-      <p>{theme ? "Dark" : "Light"}</p>
+      <p>{theme.isDark ? "Dark" : "Light"}</p>
+      <button
+        onClick={() => {
+          theme.setIsDark(!theme.isDark);
+        }}
+      >
+        {theme.isDark ? "On" : "Off"}
+      </button>
     </div>
   );
 }
